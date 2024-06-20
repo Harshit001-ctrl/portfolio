@@ -12,16 +12,15 @@
 
 body {
     background-color: black;
-    height: 100%;
-    width: 100%;
+    /* height: 100%; */
+    /* width: 100%; */
 }
 
 .text-loader {
     color: white;
 }
 
-.loading
- {
+.loading {
     justify-content: center;
     color: white;
     margin-top: 3vh;
@@ -31,9 +30,9 @@ body {
 
 .loader {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     align-items: center;
-    gap:3.9vw;
+    gap: 3.9vw;
 }
 
 .text-loader {
@@ -41,15 +40,37 @@ body {
     opacity: 0;
 }
 
+@media (max-width: 992px) {
 
-@media (max-width:576px){
-    
-    .loading{
+    .loading {
+        font-size: 4rem;
+    }
+
+    .text-loader {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .loading {
+        font-size: 3rem;
+        background-color: red;
+    }
+
+    .text-loader {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width:576px) {
+
+    .loading {
         font-size: 2rem;
     }
 
-    .text-loader{
-        font-size:1rem;
+    .text-loader {
+        font-size: 1rem;
     }
 }
 
@@ -62,31 +83,40 @@ body {
 /* =========Nav start=========== */
 
 .fixed {
-    width: 30vw;
-    height: 25vh;
-    align-items: center;
+    width: 100;
+    height: 100vh;
+    position: fixed;
+}
+#globes{
+    width: 100%;
+    height: 100vh;
+}
+
+.fixed-2 {
+    height: 300px;
+    width: 500px;
+    text-align: center;
     justify-content: center;
-    margin-left: 35%;
-    margin-top: 10%;
+    align-items: center;
     position: relative;
+    left: 100%;
+    transform: translate(40%, 40%);
 }
 
 .name {
-    height: 5vh;
+    height: 10vh;
     width: 25vw;
-    position: absolute;
-    margin-left: -9.5%;
-    margin-top: 1%;
     font-size: 3.2rem;
-    text-align: center;
+    position: absolute;
+    color: red;
 }
 
 .nav {
     margin-top: 25%;
-    margin-left: 5%;
+    margin-left: 15%;
     height: 5vh;
     width: 20vw;
-    gap: 40%;
+    gap: 30%;
 }
 
 .info,
@@ -100,40 +130,42 @@ body {
     color: rgba(43, 203, 15, 0.736);
 }
 
-
-@media (max-width:576px){
-    
-    .name{
-        font-size: 1.8rem;
-        width: 42vw;
-        margin-left:4vw;
-        background-color: red;
+@media (max-width: 992px) {
+    .name {
+        font-size: 2rem;
+        margin-right: 90vw;
     }
 
     .nav {
-        width: 45vw;
         font-size: 5rem;
-        /* background-color: green; */
-        display: flex;
+        margin-right: 95vw;
         flex-wrap: nowrap;
     }
 }
 
- 
-
-
-
-/* @media (width<768px){
-    
-    .name{
+@media (max-width: 768px) {
+   .name {
         font-size: 2rem;
-        width: 42vw;
-        margin-left:-1vw;
-        background-color: blueviolet;
+        width: 35vw;
+        margin-left: -50vw;
     }
 
-     .nav {
+    .nav {
+        width: 45vw;
+        margin-left: -48vw;
+    }
+}
+
+@media (max-width:576px) {
+
+    .name {
+        font-size: 1.8rem;
         width: 42vw;
-        margin-left: -2vw;
-        /* background-color: yellow; */
-     
+        margin-left: -150%;
+    }
+
+    .nav {
+        width: 40vw;
+        margin-left: -144%;
+    }
+}

@@ -48,3 +48,14 @@ tl.to(".text-loader", {
     }
 
 },'same')
+
+VANTA.GLOBE({
+    el: "#globes",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 50.00,
+    minWidth: 50.00,
+    scale: 0.9,
+    scaleMobile: 1.00
+  })
