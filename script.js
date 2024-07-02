@@ -1,3 +1,14 @@
+VANTA.GLOBE({
+    el: "#globes",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00
+})
+
 
 var tl = gsap.timeline();
 
@@ -22,9 +33,9 @@ tl.to(".text-loader", {
 
 })
     .to(".loads", {
-        display: "none" 
+        display: "none"
     })
-    
+
     .to(".name", {
         onStart: function () {
             $(".name").scramble(3000, 50, "alphabet", true);
@@ -43,16 +54,24 @@ tl.to(".text-loader", {
         }
 
     }, 'same')
-    
-   
 
-VANTA.GLOBE({
-    el: "#globes",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00
+
+
+
+gsap.to(".main", {
+    opacity: 1,
+    backgroundColor:"white",
+     width:"100%",
+    scrollTrigger: {
+        trigger: ".main",
+        markers: true,
+        scroller: "body",
+        start: "top 50%",
+        end: "top 30%",
+        scrub: 2,
+        yoyo:true,        
+    }
 })
+
+
+
