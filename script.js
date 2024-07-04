@@ -22,6 +22,13 @@ VANTA.WAVES({
     scaleMobile: 1.00
 })
 
+const filled = document.querySelector(".filled");
+function update(){
+    filled.style.width=`${((window.scrollY)/ (document.body.scrollHeight - window.innerHeight)*100)}%`
+    requestAnimationFrame(update);
+}
+
+update();
 
 
 var tl = gsap.timeline();
@@ -75,22 +82,21 @@ tl.to(".main", {
     scrollTrigger: {
         trigger: ".main",
         // markers: true,
-        // scroller: "",
-        start: "top 60%",
-        end: "top 20%",
-        scrub: 2,
+        start: "top 190%",
+        end: "top 140%",
+        scrub: true,
         yoyo: true,
     }
 })
 
 gsap.to(".myskills", {
-   y:-40,
+   y:-80,
     opacity: 1,
     scrollTrigger: {
         trigger: ".myskills",
         // markers: true,
-        start: "50% 71%",
-        end: "50% 50%",
+        start: "top 185%",
+        end: "top 150%",
         scrub: true,
         duration: 0.9,
     }
@@ -99,9 +105,9 @@ gsap.to(".myskills", {
 let tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".skills",
-        start: "top 68%",
-        end: "top 50%",
-        // markers: true,
+        start: "top 180%",
+        end: "top 140%",
+        markers: true,
         scrub: true,
     }
 },'sc');
