@@ -1,3 +1,4 @@
+//Smooth Scrolling
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
@@ -11,16 +12,20 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
-VANTA.WAVES({
-    el: "#globes",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00
-})
+
+
+//Arrow
+let arrow = document.getElementById("arrow");
+
+window.addEventListener("scroll", () => {
+  let position = window.scrollY;
+  // console.log(position);
+  if (position <= 5) {
+    arrow.classList.toggle("fade-in");
+    arrow.classList.toggle("fade-out");
+  }
+});
+
 
 const filled = document.querySelector(".filled");
 function update(){
@@ -30,6 +35,16 @@ function update(){
 
 update();
 
+
+//Right click disabled
+
+document.addEventListener("contextmenu",function(e){
+    e.preventDefault(false);
+})
+
+
+
+//Loading & Loader
 
 var tl = gsap.timeline();
 
@@ -57,46 +72,51 @@ tl.to(".text-loader", {
         display: "none"
     })
 
-    .to(".name", {
-        onStart: function () {
-            $(".name").scramble(3000, 50, "alphabet", true);
-        }
+    // .to(".name", {
+    //     onStart: function () {
+    //         $(".name").scramble(3000, 50, "alphabet", true);
+    //     }
 
-    }, 'same')
-    .to(".info", {
-        onStart: function () {
-            $(".info").scramble(3000, 50, "alphabet", true);
-        }
+    // }, 'same')
+    // .to(".info", {
+    //     onStart: function () {
+    //         $(".info").scramble(3000, 50, "alphabet", true);
+    //     }
 
-    }, 'same')
-    .to(".contact", {
-        onStart: function () {
-            $(".contact").scramble(3000, 50, "alphabet", true);
-        }
+    // }, 'same')
+    // .to(".contact", {
+    //     onStart: function () {
+    //         $(".contact").scramble(3000, 50, "alphabet", true);
+    //     }
 
-    }, 'same')
+    // }, 'same')
+
+
+//Main   
 
 tl.to(".main", {
     opacity: 1,
     width: "90%",
     scrollTrigger: {
         trigger: ".main",
-        // markers: true,
+        // markers: true,s
         start: "top 190%",
         end: "top 140%",
         scrub: true,
-        yoyo: true,
+        // yoyo: true,
     }
 })
 
+
+//Skills
 gsap.to(".myskills", {
    y:-80,
     opacity: 1,
     scrollTrigger: {
         trigger: ".myskills",
         // markers: true,
-        start: "top 185%",
-        end: "top 150%",
+        start: "top 199%",
+        end: "top 160%",
         scrub: true,
         duration: 0.9,
     }
@@ -105,9 +125,9 @@ gsap.to(".myskills", {
 let tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".skills",
-        start: "top 180%",
-        end: "top 140%",
-        markers: true,
+        start: "top 210%",
+        end: "top 170%",
+        // markers: true,
         scrub: true,
     }
 },'sc');
