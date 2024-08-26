@@ -12,16 +12,7 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-//Arrow
-let arrow = document.getElementById("arrow");
 
-window.addEventListener("scroll", () => {
-  let position = window.scrollY;
-  if (position <= 5) {
-    arrow.classList.toggle("fade-in");
-    arrow.classList.toggle("fade-out");
-  }
-});
 
 const filled = document.querySelector(".filled");
 function update() {
@@ -110,7 +101,7 @@ gsap.to(
       trigger: ".myskills",
       // markers: true,
       start: "top 199%",
-      end: "top 160%",
+      end: "top 150%",
       scrub: true,
       duration: 0.9,
     },
@@ -123,7 +114,7 @@ let tl2 = gsap.timeline(
     scrollTrigger: {
       trigger: ".skills",
       start: "top 210%",
-      end: "top 140%",
+      end: "top 150%",
       // markers: true,
       scrub: true,
     },

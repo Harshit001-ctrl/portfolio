@@ -46,6 +46,8 @@ html.lenis body {
 
 body {
     background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
 body::-webkit-scrollbar {
@@ -60,8 +62,8 @@ body::-webkit-scrollbar {
 .loading {
     justify-content: center;
     color: white;
-    /* margin-top: 3vh; */
     font-size: 3rem;
+    width: 100%;
 }
 
 .loader {
@@ -75,102 +77,6 @@ body::-webkit-scrollbar {
     font-size: 3rem;
     opacity: 0;
     color: white;
-}
-
-@media (max-width: 992px) {
-
-    .loading {
-        font-size: 4rem;
-    }
-
-    .text-loader {
-        font-size: 1.7rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .loading {
-        font-size: 3rem;
-    }
-
-    .text-loader {
-        font-size: 1.3rem;
-    }
-}
-
-
-@media (max-width:576px) {
-
-    .loading {
-        font-size: 2rem;
-    }
-
-    .text-loader {
-        font-size: 1rem;
-    }
-}
-
-
-
-
-/* ======Loading part end====== */
-
-
-/* =========Nav start=========== */
-
-
-
-/* //Arrow */
-
-.arrow {
-    width: 45px;
-    height: 45px;
-    border: 2px solid white;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 30px;
-    margin: auto;
-    /* left: 700px; */
-    transition: ease-in;
-    animation: bounce 1.5s infinite;
-}
-
-.arrow:before {
-    content: "";
-    position: absolute;
-    top: 11px;
-    left: 14px;
-    width: 12px;
-    height: 12px;
-    border-left: 2px solid #fafafa;
-    border-bottom: 2px solid #fafafa;
-    transform: rotate(-45deg);
-}
-
-@keyframes bounce {
-    0% {
-        transform: translate(0);
-    }
-
-    20% {
-        transform: translateY(15px);
-    }
-
-    40% {
-        transform: translate(0);
-    }
-}
-
-
-
-.fade-in {
-    opacity: 1;
-    transition: 1s all ease-in;
-}
-
-.fade-out {
-    opacity: 0;
-    transition: 1s all ease-out;
 }
 
 .background {
@@ -235,26 +141,41 @@ body::-webkit-scrollbar {
     color: rgba(43, 203, 15, 0.736);
 } */
 
+@media (max-width: 1199px) {
+    .loading {
+        font-size: 3rem;
+    }
+
+    .text-loader {
+        font-size: 1.7rem;
+    }
+
+    .right {
+        width: 100vw;
+        flex: auto;
+        margin-top: -6vh;
+    }
+
+    .names {
+        display: inline;
+    }
+
+    .left img {
+        width: 25vw;
+        margin-top: -6vh;
+    }
+}
+
 @media (max-width: 992px) {
 
 
-    .name {
-        font-size: 2rem;
-        margin-right: 84vw;
+
+    .loading {
+        font-size: 3rem;
     }
 
-    .nav {
-        font-size: 5rem;
-        margin-right: 95vw;
-        flex-wrap: nowrap;
-    }
-
-    .main {
-        width: 20px;
-    }
-
-    .left {
-        height: 50vh;
+    .text-loader {
+        font-size: 1.6rem;
     }
 
     .left img {
@@ -262,57 +183,38 @@ body::-webkit-scrollbar {
         margin-top: -6vh;
     }
 
-    .right {
-        width: 100vw;
-        flex: auto;
-        margin-top: -8vh;
-
-    }
-
-    .names {
-        display: inline;
-    }
-
     .myskills {
-        margin-top: 10vw;
+        margin-top: 20vw;
     }
 }
-
-
 
 @media (max-width: 768px) {
 
 
-    .name {
-        font-size: 2rem;
-        width: 35vw;
-        margin-left: -50vw;
+    .loading {
+        font-size: 3rem;
     }
 
-    .nav {
-        width: 45vw;
-        margin-left: -48vw;
+    .text-loader {
+        font-size: 1.35rem;
     }
 
-    .left img {
-        width: 20px;
+    .myskills {
+        margin-top: 420px;
     }
+
 }
 
 @media (max-width:576px) {
 
 
-    .name {
-        font-size: 1.8rem;
-        width: 42vw;
-        margin-left: -150%;
+    .loading {
+        font-size: 2rem;
     }
 
-    .nav {
-        width: 40vw;
-        margin-left: -144%;
+    .text-loader {
+        font-size: 1rem;
     }
-
 
 
 }
@@ -338,11 +240,13 @@ body::-webkit-scrollbar {
 .left {
     width: 50%;
     padding: 20px;
+
 }
 
 .right {
     width: 40%;
     padding: 20px 20px;
+    /* background-color: rebeccapurple; */
 }
 
 .right h1,
@@ -374,16 +278,13 @@ h2 {
 }
 
 .myskills {
-    height: 10vh;
     width: 100%;
-    /* margin-top: 5vh; */
-    align-items: center;
-    justify-content: center;
+    /* margin-top: 17vh; */
     text-align: center;
     color: rgb(209, 119, 119);
     font-family: Quicksand;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2.9rem;
     opacity: 0;
 }
 
