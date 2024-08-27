@@ -193,7 +193,7 @@ tl3.to(".address", {
     // markers: true,
     scrub: "true",
     start: "top 190%",
-    end: "top 160%",
+    end: "top 170%",
     duration: 0.9,
   },
 },'same1');
@@ -205,7 +205,7 @@ tl3.to(".quicklink", {
     //   markers: true,
       scrub: "true",
       start: "top 190%",
-      end: "top 160%",
+      end: "top 170%",
       duration: 0.9,
     },
   },'same1');
