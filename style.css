@@ -101,54 +101,6 @@ body::-webkit-scrollbar {
 }
 
 
-/* .fixed-2 {
-    height: 300px;
-    width: 500px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 100%;
-    transform: translate(40%, 40%);
-    z-index: 100;
-
-}
-
-.name {
-    height: 10vh;
-    width: 25vw;
-    font-size: 3.2rem;
-    position: fixed;
-    color: red;
-    z-index: 100;
-
-}
-
-.nav {
-    margin-top: 25%;
-    margin-left: 15%;
-    height: 5vh;
-    width: 20vw;
-    gap: 30%;
-    z-index: 100;
-
-}
-
-.info,
-.contact {
-    font-size: 1.5rem;
-    color: red;
-    z-index: 100;
-
-
-}
-
-.contact:hover,
-.info:hover {
-    color: rgba(43, 203, 15, 0.736);
-    } */
-
-
 @media (max-width:1440px) {
     .loading {
         font-size: 3rem;
@@ -295,10 +247,7 @@ body::-webkit-scrollbar {
         font-size: 1.2rem;
     }
 
-    .myskills {
-        /* margin-top: 32px; */
-    }
-
+ 
 
     .right h1 {
         text-align: center;
