@@ -178,8 +178,8 @@ tl3.to(".name-fotter", {
   scrollTrigger: {
     trigger: ".name-fotter",
     // markers: true,
-    start: "top 190%",
-    end: "top 178%",
+    start: "top 180%",
+    end: "top 125%",
     scrub: true,
     duration: 0.9,
   },
@@ -193,7 +193,7 @@ tl3.to(".address", {
     // markers: true,
     scrub: "true",
     start: "top 190%",
-    end: "top 170%",
+    end: "top 160%",
     duration: 0.9,
   },
 },'same1');
@@ -204,8 +204,8 @@ tl3.to(".quicklink", {
       trigger: ".quicklink",
     //   markers: true,
       scrub: "true",
-      start: "top 190%",
-      end: "top 170%",
+      start: "top 180%",
+      end: "top 160%",
       duration: 0.9,
     },
   },'same1');
