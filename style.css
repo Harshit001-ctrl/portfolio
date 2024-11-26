@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
@@ -610,3 +611,614 @@ button {
     transform: scale(1.3); /* Slight zoom effect on hover */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow on hover */
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bar {
+    position: fixed;
+    width: 100%;
+    height: 0.6vh;
+    z-index: 1000;
+}
+
+.filled {
+    width: 0%;
+    height: 100%;
+    background-color: #ff98a2;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.loads {
+    background-color: black;
+
+}
+
+.loading {
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    width: 100%;
+}
+
+.loader {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    gap: 3.9vw;
+}
+
+.text-loader {
+    font-size: 3rem;
+    opacity: 0;
+    color: white;
+}
+
+.finger {
+    z-index: -1200;
+    color: red;
+    position: relative;
+    opacity: 0;
+}
+
+.background {
+    position: absolute;
+    width: 100vw;
+    /* max-height: 90vh; */
+    pointer-events: none;
+}
+
+.fixed {
+    width: 100;
+    height: 70vh;
+    z-index: 100;
+    position: relative;
+}
+
+
+/* .fixed-2 {
+    height: 300px;
+    width: 500px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 100%;
+    transform: translate(40%, 40%);
+    z-index: 100;
+
+}
+
+.name {
+    height: 10vh;
+    width: 25vw;
+    font-size: 3.2rem;
+    position: fixed;
+    color: red;
+    z-index: 100;
+
+}
+
+.nav {
+    margin-top: 25%;
+    margin-left: 15%;
+    height: 5vh;
+    width: 20vw;
+    gap: 30%;
+    z-index: 100;
+
+}
+
+.info,
+.contact {
+    font-size: 1.5rem;
+    color: red;
+    z-index: 100;
+
+
+}
+
+.contact:hover,
+.info:hover {
+    color: rgba(43, 203, 15, 0.736);
+    } */
+
+
+@media (max-width:1440px) {
+    .loading {
+        font-size: 3rem;
+    }
+
+    .text-loader {
+        font-size: 2.3rem;
+    }
+
+    .right {
+        width: 100vw;
+        margin-top: -6vh;
+    }
+
+    .names {
+        display: inline;
+    }
+
+    .left img {
+        width: 25vw;
+        margin-top: -6vh;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .loading {
+        font-size: 3rem;
+    }
+
+    .text-loader {
+        font-size: 1.9rem;
+    }
+
+    .right {
+        width: 100vw;
+        /* flex: auto; */
+        margin-top: -6vh;
+    }
+
+
+
+    .left img {
+        width: 25vw;
+        margin-top: -6vh;
+    }
+
+    .right p {
+        height: 30vh;
+        width: 38vw;
+        margin-left: -50px;
+    }
+
+    .names {
+        display: flex;
+        gap: 30px;
+        margin-left: -50px;
+    }
+
+    .btn {
+        margin-left: -490px;
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .finger {
+        opacity: 1;
+        color: rgb(209, 119, 119);
+        height: 40px;
+        width: 20%;
+        padding: 10px;
+        font-family: Quicksand;
+        position: absolute;
+        background-color: #222039;
+        border-radius: 30px;
+        margin-top: 11px;
+        left: 410px;
+    }
+
+
+    .loading {
+        font-size: 3rem;
+    }
+
+    .text-loader {
+        font-size: 1.6rem;
+    }
+
+    .left img {
+        width: 25vw;
+        margin-top: -6vh;
+    }
+
+    .right h1 {
+        text-align: center;
+        margin-left: -200px;
+    }
+
+    .right p {
+        height: 30vh;
+        width: 40vw;
+        overflow: hidden;
+        display: inline-block;
+        margin-left: -40px;
+    }
+
+    .names {
+        display: flex;
+        gap: 25px;
+        margin-left: -50px;
+    }
+
+    .btn {
+        margin-left: -490px;
+        margin-top: 90px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .finger {
+        opacity: 1;
+        color: rgb(209, 119, 119);
+        height: 40px;
+        width: 27%;
+        text-align: center;
+        padding: 10px;
+        font-family: Quicksand;
+        background-color: #222039;
+        border-radius: 30px;
+        position: absolute;
+        margin-top: 11px;
+        left: 300px;
+    }
+
+    .loading {
+        font-size: 3rem;
+    }
+
+    .text-loader {
+        font-size: 1.2rem;
+    }
+
+    .myskills {
+        /* margin-top: 32px; */
+    }
+
+
+    .right h1 {
+        text-align: center;
+        margin-left: -200px;
+    }
+
+    #image {
+        margin-left: -12px;
+        height: 30vh;
+        width: 26vw;
+        margin-bottom: 4vw;
+    }
+
+    .right p {
+        height: 30vh;
+        width: 40vw;
+        overflow: hidden;
+        display: inline-block;
+        margin-left: -30px;
+        overflow-x: hidden;
+    }
+
+    .names {
+        display: flex;
+        gap: 25px;
+        margin-left: -60px;
+    }
+
+    .btn {
+        display: block;
+        margin-left: -490px;
+        margin-top: 90px;
+    }
+
+    .myskills {
+        margin-top: -65px;
+    }
+
+    .from,
+    .age,
+    .gender {
+        color: #ff98a2;
+    }
+
+    .from1,
+    .age1,
+    .info {
+        color: white;
+    }
+}
+
+@media (max-width:576px) {
+
+    .finger {
+        opacity: 1;
+        height: 40px;
+        color: rgb(209, 119, 119);
+        width: 35%;
+        text-align: center;
+        padding: 10px;
+        font-family: Quicksand;
+        background-color: #222039;
+        border-radius: 30px;
+        position: absolute;
+        margin-top: 11px;
+        left: 200px;
+    }
+
+    .loading {
+        font-size: 2rem;
+    }
+
+
+    .text-loader {
+        font-size: 1rem;
+    }
+
+    .myskills {
+        margin-top: -8vh;
+    }
+
+    #image {
+        margin-left: -100px;
+        height: 29vh;
+        width: 80vw;
+    }
+
+    .names {
+        margin-left: -50px;
+    }
+
+    .buttons {
+        display: flex;
+        position: absolute;
+        margin-top: 23vw;
+    }
+
+    .from,
+    .age,
+    .gender {
+        color: #ff98a2;
+    }
+
+    .from1,
+    .age1,
+    .info {
+        color: white;
+    }
+
+    #butt {
+        margin-left: -80px;
+    }
+
+    .right p {
+        height: 33vh;
+        overflow: hidden;
+        margin-left: -50px;
+    }
+
+    .fotter {
+        margin-left: -10px;
+    }
+
+}
+
+.main img {
+    border-radius: 50px;
+    border: none;
+    /* height: 50vh; */
+}
+
+
+.main {
+    height: 90vh;
+    width: 55%;
+    opacity: 0;
+    margin-top: 97px;
+    padding: 130px 130px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    display: flex;
+    transform: translate(1%, 3%);
+}
+
+.left.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.harshitimg img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right {
+    width: 40%;
+    padding: 20px 20px;
+}
+
+.right h1,
+h2 {
+    color: rgb(209, 119, 119);
+    font-size: 2.8rem;
+}
+
+
+.right p {
+    margin-top: 4vh;
+    height: 20vh;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    width: 38vw;
+    line-height: 4vh;
+    margin-left: -50px;
+}
+
+.names {
+    margin-top: 10vh;
+    line-height: 3vh;
+    color: white;
+    display: flex;
+    gap: 37px;
+    margin-left: -28px;
+}
+
+.buttn a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(79, 171, 156);
+}
+
+
+
+button {
+    background-color: rgb(209, 119, 119);
+    padding: 4px;
+    transition: 0.4s;
+}
+
+.myskills {
+    width: 100%;
+    text-align: center;
+    color: rgb(209, 119, 119);
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 2.9rem;
+    opacity: 0;
+}
+
+.skills {
+    height: 40vh;
+    width: 100%;
+    align-items: center;
+
+}
+
+.skill {
+    width: 100%;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.skill h2 {
+    color: white;
+    padding: 1vw 2vw;
+    opacity: 0;
+    /* border: 1px solid white; */
+    border-radius: 50px;
+    font-weight: 400;
+    filter: blur(10px);
+    transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+
+.fotter {
+    margin-top: 135px;
+    height: 45vh;
+    width: 100%;
+}
+
+.name-fotter {
+    font-family: Quicksand;
+    font-size: 3rem;
+    color: rgb(209, 119, 119);
+    text-align: center;
+    height: 70px;
+    width: 100%;
+    opacity: 0;
+}
+
+.fotter-2 {
+    justify-content: space-evenly;
+}
+
+.address {
+    height: 10vw;
+    width: 20vw;
+    margin-top: 50px;
+    opacity: 0;
+}
+
+.address i,
+.add {
+    color: white;
+    font-size: 20px;
+}
+
+.address h3,
+.quicklink h3 {
+    color: rgb(209, 119, 119);
+}
+.quicklink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 16px; /* Spacing between elements */
+}
+
+.quicklink h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.quicklink .links {
+    display: flex;
+    gap: 16px; /* Spacing between icons */
+    justify-content: center;
+    align-items: center;
+}
+
+.quicklink .links a img {
+    display: block;
+    border-radius: 8px; /* Optional: adds slight rounding to icons */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds hover effects */
+}
+
+.quicklink .links a img:hover {
+    transform: scale(1.3); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow on hover */
+}
+>>>>>>> 54fed3cfb2eb4c907efe871262a1e4801e9eff6f
