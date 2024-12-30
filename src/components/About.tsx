@@ -25,7 +25,7 @@ export default function About() {
         <div className="relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#d17777] to-[#ff98a2] rounded-[50px] blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
           <img 
-            src="/harshit photo.png" 
+            src="/src/components/harshit photo.png" 
             alt="Profile" 
             className="relative rounded-[50px] w-full md:w-[80%] lg:w-[70%] mx-auto transform transition duration-500 hover:scale-105"
           />
