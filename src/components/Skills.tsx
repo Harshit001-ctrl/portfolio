@@ -6,7 +6,7 @@ import { useSkillsAnimation } from '../hooks/useSkillsAnimation';
 gsap.registerPlugin(ScrollTrigger);
 
 const SKILLS = [
-  'HTML', 'CSS', 'JAVASCRIPT', 'BOOTSTRAP', 'MYSQL', 'PHP',
+  'HTML', 'CSS', 'JAVASCRIPT', 'BOOTSTRAP', 'MYSQL', 'PHP','TYPESCRIPT',
   'MONGODB', 'TAILWIND', 'APIs', 'GSAP', 'GIT HUB', 'REACT', 'LARAVEL'
 ];
 
