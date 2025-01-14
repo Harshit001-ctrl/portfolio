@@ -32,7 +32,7 @@ export default function Footer() {
             <h3 className="text-[#d17777] text-2xl mb-6 font-quicksand">Contact Me</h3>
             <div className="flex gap-8">
               <a 
-                href="mailto:harshitrao84@gmail.com" 
+                href="mailto:https://harshitrao84@gmail.com/" 
                 className="text-white hover:text-[#ff98a2] transition-all duration-300 transform hover:scale-125"
                 aria-label="Email"
               >
